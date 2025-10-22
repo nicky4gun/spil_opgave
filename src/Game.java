@@ -3,14 +3,12 @@ public class Game {
     private String title;
     private String genre;
     private Double price;
-    private int copiesSold;
 
     public Game(int gameId, String title, String genre, Double price) {
         this.gameId = gameId;
         this.title = title;
         this.genre = genre;
         this.price = price;
-        this.copiesSold = copiesSold;
     }
 
     public int getGameId() {
