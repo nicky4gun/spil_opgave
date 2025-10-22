@@ -1,11 +1,11 @@
-public class game {
+public class Game {
     private int gameId;
     private String title;
     private String genre;
     private Double price;
     private int copiesSold;
 
-    public game(int gameId, String title, String genre, Double price) {
+    public Game(int gameId, String title, String genre, Double price) {
         this.gameId = gameId;
         this.title = title;
         this.genre = genre;
@@ -45,13 +45,8 @@ public class game {
     public void setPrice(Double price) {
         this.price = price;
     }
-    public int getCopiesSold() {
-        return copiesSold;
-    }
 
-    public void setCopiesSold(int copiesSold) {
-        this.copiesSold = copiesSold;
-    }
+
 
     public void displayDetails() {
         System.out.println("Game ID: " + gameId);

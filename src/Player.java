@@ -1,10 +1,10 @@
-public class player {
+public class Player {
     private int playerId;
     private String playerName;
     private int age;
     private Double score;
 
-    public player(int playerId, String playerName, int age, Double score) {
+    public Player(int playerId, String playerName, int age, Double score) {
         this.playerId = playerId;
         this.playerName = playerName;
         this.age = age;
