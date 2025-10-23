@@ -29,6 +29,7 @@ public class gamesystem {
 
 
     }
+
     public void displayAllGames(){
         System.out.println("All games");
         for (game g : games) {
@@ -36,6 +37,7 @@ public class gamesystem {
         }
 
     }
+
     public void displayAllPlayers(){
         System.out.println("All players");
         for (player p : players){
@@ -82,6 +84,7 @@ public class gamesystem {
         }
         return total;
     }
+
     public player findTopScoringPlayer(){
         if(playerCount ==0) return null;
         player topplayer = players[0];
