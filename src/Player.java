@@ -48,7 +48,7 @@ public class Player {
         System.out.println("Player Name: " + playerName);
         System.out.println("Age: " + age);
         System.out.println("Score: " + score);
-        System.out.println("Test fra Jannik");
+
     }
 
     public void updateScore(double newScore) {
