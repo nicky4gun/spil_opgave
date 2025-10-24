@@ -79,5 +79,23 @@ public class Gamesystem {
         }
         System.out.println("Total revenue: " + totalrevenue + "KR" );
      }
+    public void displayTopScoringPlayer() {
+        if (playerCount == 0) {
+            System.out.println("Ingen spillere i systemet.");
+            return;
+        }
 
+        Player topPlayer = players[0];
+        for (int i = 1; i < playerCount; i++) {
+            if (players[i] != null && players[i].getScore() > topPlayer.getScore()) {
+                topPlayer = players[i];
+            }
+        }
+
+        System.out.println("Topscorer: " + topPlayer.getPlayerName() +
+                " (ID: " + topPlayer.getPlayerId() +
+                ", Score: " + topPlayer.getScore() + ")");
+    }
 }
+
+

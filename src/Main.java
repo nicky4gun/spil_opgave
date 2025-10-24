@@ -18,6 +18,6 @@ public class Main {
       System.out.println("Fundet Spil: " + system.findGamesByID(1));
       System.out.println("Fundet Spiller: " + system.findPlayerById(201));
       system.calculatetotalrevenue();
-
+      system.displayTopScoringPlayer();
     }
 }
