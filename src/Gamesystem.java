@@ -77,7 +77,7 @@ public class Gamesystem {
             totalrevenue += g.getPrice()* g.getGamesSold();
 
         }
-        System.out.println("Total revenue: " + totalrevenue );
+        System.out.println("Total revenue: " + totalrevenue + "KR" );
      }
 
 }

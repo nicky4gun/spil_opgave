@@ -4,7 +4,7 @@ public class Main {
       Gamesystem system = new Gamesystem(2, 2);
 
       system.addGame(new Game(1,"Minecraft","Sandbox",300.99,2));
-      system.addGame(new Game(2,"deadlock","Fps-moba",00.00,2));
+      system.addGame(new Game(2,"deadlock","Fps-moba",100.00,2));
 
       system.displayAllGames();
 
