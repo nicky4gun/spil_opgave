@@ -3,12 +3,14 @@ public class Game {
     private String title;
     private String genre;
     private Double price;
+    private int gamesSold;
 
-    public Game(int gameId, String title, String genre, Double price) {
+    public Game(int gameId, String title, String genre, Double price,int gamesSold) {
         this.gameId = gameId;
         this.title = title;
         this.genre = genre;
         this.price = price;
+        this.gamesSold = gamesSold;
     }
 
     public int getGameId() {
@@ -42,6 +44,12 @@ public class Game {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+    public int getGamesSold() {
+        return gamesSold;
+    }
+    public void setGamesSold(int gamesSold) {
+        this.gamesSold = gamesSold;
     }
 
 

@@ -71,31 +71,13 @@ public class Gamesystem {
         }
         return null;
      }
-/*
-    public double calculateTotalRevenue() {
-        double total = 0;
-        for (int i = 0; i < gameCount; i++) {
-            if (games[i] != null) {
-                total += games[i].getPrice() * games[i].
+     public void calculatetotalrevenue(){
+        double totalrevenue = 0;
+        for (Game g : games) {
+            totalrevenue += g.getPrice()* g.getGamesSold();
 
-            }
         }
+        System.out.println("Total revenue: " + totalrevenue );
+     }
 
-        return total;
-        */
- /*
-    }
-
-    public Player findTopScoringPlayer(){
-        if(playerCount ==0) return null;
-        Player topplayer = players[0];
-        for (int i=1;i< playerCount;i++){
-            if (players[i] != null && players[i].getScore() > topplayer.getScore()){
-                topplayer = players[i];
-            }
-        }
-        return topplayer;
-    }
-
-  */
 }

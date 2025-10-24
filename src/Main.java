@@ -3,8 +3,8 @@ public class Main {
     public static void main(String[] args) {
       Gamesystem system = new Gamesystem(2, 2);
 
-      system.addGame(new Game(1,"Minecraft","Sandbox",300.99));
-      system.addGame(new Game(2,"deadlock","Fps-moba",00.00));
+      system.addGame(new Game(1,"Minecraft","Sandbox",300.99,2));
+      system.addGame(new Game(2,"deadlock","Fps-moba",00.00,2));
 
       system.displayAllGames();
 
@@ -17,5 +17,7 @@ public class Main {
 
       System.out.println("Fundet Spil: " + system.findGamesByID(1));
       System.out.println("Fundet Spiller: " + system.findPlayerById(201));
+      system.calculatetotalrevenue();
+
     }
 }
